@@ -1,0 +1,43 @@
+.panel {
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.bioText {
+  margin: 8px 0 12px;
+  color: #333;
+}
+
+.editor {
+  display: grid;
+  gap: 10px;
+}
+
+textarea {
+  min-height: 90px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #aaa;
+}
+
+button {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #aaa;
+  background: #f7f7f7;
+  cursor: pointer;
+}
+button:hover {
+  background: #eee;
+}
+
+.primary {
+  border-color: #2f6fed;
+  background: #2f6fed;
+  color: white;
+}
+.primary:hover {
+  background: #255bd0;
+}

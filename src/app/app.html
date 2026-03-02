@@ -1,0 +1,20 @@
+<div class="page">
+  <h1>User Profile Dashboard </h1>
+
+  <!-- 1) UserCard: Displays User basic info-->
+   <app-user-card [user]="user"></app-user-card>
+
+   <div class="grid">
+      <!-- 2) UserStatus: Can toggle Online/Offline and send changes back -->
+      <app-user-status 
+        [isOnline]="user.isOnline" 
+        (statusChanged)="onStatusChanged($event)">
+      </app-user-status>
+
+      <!-- 3) UserBio: Can edit bio and send changes back -->
+      <app-user-bio 
+        [bio]="user.bio" 
+        (bioChanged)="onBioChanged($event)">
+      </app-user-bio>
+   </div>
+</div>

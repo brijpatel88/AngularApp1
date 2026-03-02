@@ -1,0 +1,25 @@
+<div class="card">
+  <div class="avatarWrap">
+    <img class="avatar" [src]="user.photoUrl" alt="Profile photo" />
+  </div>
+
+  <div class="info">
+    <h2 class="name">{{ user.name }}</h2>
+
+    <div class="meta">
+      <span>Age: <strong>{{ user.age }}</strong></span>
+      <span class="dot">•</span>
+      <span>Location: <strong>{{ user.location }}</strong></span>
+    </div>
+
+    <span class="badge" [class.online]="user.isOnline" [class.offline]="!user.isOnline">
+      {{ user.isOnline ? 'Online' : 'Offline' }}
+    </span>
+
+    <div class="chips">
+      <span class="chip" *ngFor="let item of user.interests">
+        {{ item }}
+      </span>
+    </div>
+  </div>
+</div>

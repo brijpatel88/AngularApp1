@@ -1,0 +1,13 @@
+<div class="panel">
+  <h3>Bio</h3>
+
+  <p class="bioText">{{ bio }}</p>
+
+  <div class="editor">
+    <button (click)="startEdit()">Edit</button>
+
+    <textarea [(ngModel)]="editedBio" placeholder="Write a short bio..."></textarea>
+
+    <button class="primary" (click)="save()">Save</button>
+  </div>
+</div>
